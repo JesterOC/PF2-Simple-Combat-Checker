@@ -1,0 +1,46 @@
+﻿<Window x:Class="PathFInder_Damage_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PathFInder_Damage_Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ShowInTaskbar="False">
+    <Grid x:Name="brokenBoards">
+        <Button Content="Roll" HorizontalAlignment="Left" Margin="179,335,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="TwoHandedDamage" HorizontalAlignment="Left" Height="23" Margin="318,105,0,0" TextWrapping="Wrap" Text="1d12+4" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SwordAndBoardDam" HorizontalAlignment="Left" Height="23" Margin="318,165,0,0" TextWrapping="Wrap" Text="1d8+4" VerticalAlignment="Top" Width="120"/>
+        <Label Content="2 Handed" HorizontalAlignment="Left" Margin="32,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sword and Board" HorizontalAlignment="Left" Margin="32,139,0,0" VerticalAlignment="Top"/>
+        <Label Content="2 Handed" HorizontalAlignment="Left" Margin="318,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sword and Board" HorizontalAlignment="Left" Margin="318,139,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CommonAC" HorizontalAlignment="Left" Height="23" Margin="179,106,0,0" TextWrapping="Wrap" Text="18" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ShieldAC" HorizontalAlignment="Left" Height="23" Margin="179,165,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Shield" HorizontalAlignment="Left" Margin="179,139,0,0" VerticalAlignment="Top"/>
+        <Label Content="Armor&#xD;&#xA;" HorizontalAlignment="Left" Margin="179,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FighterHP" HorizontalAlignment="Left" Height="23" Margin="318,36,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="120"/>
+        <Label Content="HP" HorizontalAlignment="Left" Margin="318,5,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="SwordAndBoardShield_Hardness" HorizontalAlignment="Left" Height="23" Margin="179,226,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Shield Hardness" HorizontalAlignment="Left" Margin="179,200,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="SwordAndBoardShield_HP" HorizontalAlignment="Left" Height="23" Margin="179,280,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Shield Hardness" HorizontalAlignment="Left" Margin="179,254,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FighterFights" HorizontalAlignment="Left" Height="23" Margin="530,36,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Fights" HorizontalAlignment="Left" Margin="530,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FighterToHit" HorizontalAlignment="Left" Height="23" Margin="179,36,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" Width="120"/>
+        <Label Content="To Hit" HorizontalAlignment="Left" Margin="179,5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Two Handed Wins" HorizontalAlignment="Left" Margin="530,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="thResults" Content="----" HorizontalAlignment="Left" Margin="664,106,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Sword and Board" HorizontalAlignment="Left" Margin="530,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="sbResults" Content="----" HorizontalAlignment="Left" Margin="664,161,0,0" VerticalAlignment="Top" Width="80"/>
+        <ComboBox x:Name="ShieldStrat" HorizontalAlignment="Left" Margin="22,227,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <ComboBoxItem Content="Preserve Shield"/>
+            <ComboBoxItem Content="Use always"/>
+            <ComboBoxItem Content="Don't use"/>
+        </ComboBox>
+        <Label Content="Broken Boards" HorizontalAlignment="Left" Margin="530,208,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="bbResults" Content="----" HorizontalAlignment="Left" Margin="664,208,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Desp uses" HorizontalAlignment="Left" Margin="530,254,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="duResults" Content="----" HorizontalAlignment="Left" Margin="664,254,0,0" VerticalAlignment="Top" Width="80"/>
+
+    </Grid>
+</Window>
